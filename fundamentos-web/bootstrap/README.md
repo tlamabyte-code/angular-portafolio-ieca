@@ -15,7 +15,7 @@
     - Dashboard
     - Sign-in
 4. Una vez dentro, abre la consola del navegador `(ctrl + shift + C)`
-5. Trata de tomar el código correspondiente (copia&pega) hacía el [archivo](ejercicio.html)
+5. Trata de tomar el código correspondiente `(copia&pega)` hacía el [archivo](ejercicio.html)
 
 ### Consejos
 
