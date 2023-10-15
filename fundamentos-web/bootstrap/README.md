@@ -20,7 +20,7 @@
 ### Consejos
 
 * No copies todo y pegues directamente, mejor ve copiando pequeños bloques y ve verificando si va funcionando
-* Recuerda importar el (CDN de Bootstrap)[https://getbootstrap.com/docs/5.3/getting-started/introduction/]
+* Recuerda importar el [CDN de Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
     - Importar estilos
     - Importar scripts de javascript
 * El CDN es una manera de importar bootstrap a una hoja de HTML, al utilizar esta estrategia lo que va a pasar es que cada vez que recargues el archivo estará haciendo una petición a la URL del CDN y cargará el recurso (es como una especie de descarga) 
