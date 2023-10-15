@@ -1,9 +1,8 @@
 ## Ejercicios: Fundamentos Web
 
 
-## ⚠️
---> 
-Para los ejercicios con código, revisa los comentarios, ahí encuentras las instrucciones <--
+#### ⚠️ Atención
+> Para los ejercicios con código, revisa los comentarios, ahí encuentras las instrucciones
 
 ### HTML
 * [Ejercicio 1](fundamentos-web/html/ejercicio-1.html)
