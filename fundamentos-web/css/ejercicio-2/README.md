@@ -8,4 +8,4 @@
 
 ### Resultado
 
-* El resultado debería ser [Imagen](fundamentos-web/css/ejercicio-2/resultado.jpg)
+* El resultado debería ser [Imagen](resultado.jpg)
