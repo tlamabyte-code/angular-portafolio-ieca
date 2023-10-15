@@ -1,13 +1,13 @@
 # Portafolio de Evidencias
 
-Nombre: <Nombre_Completo>
+Nombre: **<Nombre_Completo>**
 
-Lista de Ejercicios:
-|         |         |
+## Ejercicios
+| Módulo  | Link    |
 | ------- | ------- |
 | Fundamentos Web | [README](/fundamentos-web/README.md) |
 
-### Notas
+## Notas
 * Para los ejercicios con código, revisa los comentarios, ahí encuentras las instrucciones
 * Si no logras llegar a los resultados, solo te pido que registres tus commits en la rama `master` para tener registro de tus evidencias
 
