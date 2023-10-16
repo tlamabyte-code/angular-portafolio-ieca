@@ -2,7 +2,7 @@
 
 ### Instrucciones
 
-1. Completa el CSS dentro del archivo (ejercicio-1.html)
+1. Completa el CSS dentro del [archivo](ejercicio.html)
 2. Haz que todo el body tenga un fondo de color -> (color: aqua)
 3. Agrega una imagen a la carpeta del ejercicio
 4. Agrega la etiqueta correspondiente de la imagen debajo del título <h1>
