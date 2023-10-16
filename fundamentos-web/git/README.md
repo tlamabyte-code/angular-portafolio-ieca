@@ -11,8 +11,9 @@
 
 ### Consejos/Comandos
 
-- `git checkout -b <nombre_de_la_rama>`. Comando para crear una nueva rama, al ejecutar crea la rama y git te ubica automaticamente ahí
 - `git status`. Comando para visualizar que cambios estan pendientes (muestra los archivos nuevos o archivos moficados)
 - `git add`. Comando para agregar cambios a un commit
 - `git commit`. Comando para poner un título y/o descripción a tu commit
 - `git push`. Comando para publicar tus cambios a la nube/internet
+- `git checkout -b <nombre_de_la_rama>`. Comando para crear una nueva rama, al ejecutar crea la rama y git te ubica automaticamente ahí
+- `git checkout <nombre_de_la_rama>`. Comando para moverte a otra rama
