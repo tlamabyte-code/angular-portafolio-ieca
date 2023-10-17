@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botón de Navegación</title>
+    <style>
+        #titulo{
+            color:brown;
+        }
+        .bloque-lista{
+            background-color:beige;
+        }       
+    </style>
 </head>
 
-<body>
+<body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
 
     <header>
-        <h1>Sitio Web</h1>
+        <h1 id="titulo" class="bloque-lista">Sitio Web</h1>
     </header>
 
     <nav>
         <ul>
             <li>
                 <!-- Completa la navegación -->
-                <a href="#">Acerca de</a>
+                <a href="acerca.html">Acerca de</a>
             </li>
         </ul>
     </nav>
@@ -26,12 +34,38 @@
         <h2>Formulario</h2>
         <!-- Completa el fomulario -->
         <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+            <p>
+                <label for="nombre"> Nombre (obligatorio)</label>
+                <input type="text" name="nombre" id="nombre"
+                placeholder="Nombre Apellido"
+                autofocus
+                autocomplete
+                required
+                >
+            </p>
 
+            <p>
+                <label for="password">Contraseña (obligatorio)</label>
+                <input type="password" name="password" id="password"
+                placeholder="qwe1234"
+                required pattern="[a-z]{3}[0-9]{4}">(La contraseña debe contener 3 letras y 4 números en este orden)
+            </p>
+
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="+1231234567">
+            </p>
+
+            <p>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="ejamplo@email.com">
+            </p>
+
+            <p>
+                <label for="website">Página Web</label>
+                <input type="url" name="website" id="website" placeholder="http://www.tuweb.com">
+            </p>
+            <input type="submit" value="Enviar">
             <!-- Agrega los inputs faltantes -->
         </form>
     </main>
