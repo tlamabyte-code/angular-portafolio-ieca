@@ -1,6 +1,6 @@
 # Portafolio de Evidencias
 
-Nombre: **<Nombre_Completo>** (Hasta que tengas tu [rama de trabajo](#crear-tu-rama-de-trabajo-evidencias), puedes cambiar tu nombre)
+Nombre: **<Nombre_Completo>** (Hasta que tengas tu [rama de trabajo](#crear-tu-rama-de-trabajo-evidencias), puedes cambiar tu nombre completo al tuyo)
 
 Si ya tienes tu [fork](#haz-un-fork-del-portafolio-de-evidencias) listo ✅, te dejo el [shortcut de ejercicios](#ejercicios) 😁
 
