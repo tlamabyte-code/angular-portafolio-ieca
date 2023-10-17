@@ -16,6 +16,7 @@
     - Sign-in
 4. Una vez dentro, abre la consola del navegador `(ctrl + shift + C)`
 5. Trata de tomar el código correspondiente `(copia&pega)` hacía el [archivo](ejercicio.html)
+6. Se espera que el resultado sea el mismo que el ejemplo que seleccionaste de Bootstrap 5
 
 ### Consejos
 
