@@ -8,4 +8,4 @@
 
 ### Posible Resultado
 
-* Un posible resultado puede ser [Imagen](fundamentos-web/html/ejercicio-1/resultado.jpg)
+* Un posible resultado puede ser [Imagen](resultado.jpg)
