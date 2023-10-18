@@ -1,1 +1,112 @@
 <!-- Aquí incluye el código del ejemplo de Bootstrap -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de Bootstrap con contenido dinámico</title>
+    <!-- Incluye los estilos de Bootstrap a través de CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+<body>
+    <header>
+        <!-- Encabezado con un menú de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Talento Tech GTO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="inicio-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="servicios-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="acerca-link">Acerca de</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Contenido principal de la página -->
+        <h1>Bienvenido a Talento Tech GTO</h1>
+        <div id="contenido-inicio">
+            <p>¡Participa y Desarrolla tus habilidades de programación, tecnología e innovación! Recibe una constancia que avale tus conocimientos Tech.</p>
+            <p>Información sobre nuestra empresa y equipo.</p>
+            <p>Con este programa de capacitación, buscamos desarrollar tus habilidades y ayudarte a encontrar o mejorar tu empleo.</p>
+            <p>Participa en las convocatorias y forma parte de las capacitaciones especializadas en programación, tecnología e innovación, las cuales, son impartidas por expertos para garantizar tu aprendizaje, al finalizar recibirás una constancia que avale tus conocimientos y habilidades.</p>
+            <p>Además, las mejores empresas de Guanajuato, podrán consultar tu perfil y CV digital para conocer tu talento y evaluar la oportunidad de ofrecerte un empleo.</p>
+            <p>¡Guanajuato sí vincula el Talento Tech con las mejores oportunidades y empresas!</p>
+        </div>
+        <div id="contenido-servicios" style="display: none;">
+            <h2>Nuestros Servicios</h2>
+            <p>Descripción de los servicios que ofrecemos.</p>
+            <fieldset><legend>Capacitaciones</legend>
+                <table border="1"><caption>Los mejores cursos de programación</caption>
+                    <thead>
+                    <tr>
+                        <td><strong>Tema</strong></td>
+                        <td><strong>Descripción</strong></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Desarollo web con React JS</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Desarollo web en .NET CORE</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Desarollo web con Angular</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </fieldset>
+        </div>
+        <div id="contenido-acerca" style="display: none;">
+            <h2>Acerca de Nosotros</h2>
+            <p>Oficinas de dirección general</p>
+            <p>Edificio Centro de Gobierno Irapuato, Vialidad interior, sobre Av. Siglo XXI No. 412, Predio Los Sauces, 6to. piso. CP. 36547, Irapuato, Gto.</p>            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Pie de página simple -->
+        <div class="container">
+            <p>&copy; 2023 Talento Tech GTO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Incluye los scripts de Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Agregar eventos de clic para cambiar el contenido
+        document.getElementById("acerca-link").addEventListener("click", function() {
+            document.getElementById("contenido-inicio").style.display = "none";
+            document.getElementById("contenido-acerca").style.display = "block";
+            document.getElementById("contenido-servicios").style.display = "none";
+        });
+        
+        document.getElementById("servicios-link").addEventListener("click", function() {
+            document.getElementById("contenido-inicio").style.display = "none";
+            document.getElementById("contenido-acerca").style.display = "none";
+            document.getElementById("contenido-servicios").style.display = "block";
+        });
+
+        document.getElementById("inicio-link").addEventListener("click", function() {
+            document.getElementById("contenido-inicio").style.display = "block";
+            document.getElementById("contenido-acerca").style.display = "none";
+            document.getElementById("contenido-servicios").style.display = "none";
+        });
+    </script>
+</body>
+</html>
+
