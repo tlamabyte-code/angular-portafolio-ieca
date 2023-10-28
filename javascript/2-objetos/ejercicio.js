@@ -21,9 +21,13 @@
 const juegos = {
     aguila: 0,
     sol: 1,
-    tirarMoneda: undefined
+    tirarMoneda: getRandomValue
 }
 
 for (let tiros = 0; tiros < 10; tiros++) {
-    // juegos.tirarMoneda()
+    console.log(juegos.tirarMoneda());
+}
+
+function getRandomValue() {
+    return Math.round(Math.random()) === 1 ? 'Cae águila' : 'Cae sol';
 }

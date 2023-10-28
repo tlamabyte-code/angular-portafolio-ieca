@@ -7,10 +7,11 @@
 <body>
     <div style="display: flex">
         <input type="text" id="inputEncabezado" placeholder="Ingresa el nuevo encabezado"
-        style="width:70%;margin-bottom:10px" />
+            style="width:70%;margin-bottom:10px" />
     </div>
     <div style="display: flex">
-        <button id="btnActualizacion" onClick="modificarEncabezado()" style="margin-right: 10px">Establecer Encabezado</button>
+        <button id="btnActualizacion" onClick="modificarEncabezado()" style="margin-right: 10px">Establecer
+            Encabezado</button>
         <button id="btnUndo" disabled>Encabezado Anterior</button>
     </div>
     <h1 id="encabezado">...</h1>
@@ -37,9 +38,34 @@
         const btnUndo = document.getElementById('btnUndo')
         const tituloEncabezado = document.getElementById('encabezado')
         const inputEncabezado = document.getElementById('inputEncabezado')
+        var titulos = ['...'];
+        var counter = 0;
 
         function modificarEncabezado() {
             /* Tu código aquí */
+            if (inputEncabezado.value === '') {
+                alert('El valor del encabezado no puede ser vacío');
+                return;
+            }
+            titulos.push(inputEncabezado.value);
+            tituloEncabezado.innerHTML = inputEncabezado.value;
+            counter++;
+            console.log(titulos);
+            if (counter >= 2) {
+                btnUndo.disabled = false;
+            } else {
+                btnUndo.disabled = true;
+            }
+        }
+
+        function undoEncabezado() {
+            titulos.pop();
+            tituloEncabezado.innerHTML = titulos[titulos.length - 1];
+            counter--;
+            console.log(titulos[titulos.length - 1]);
+            if (counter === 0) {
+                btnUndo.disabled = true;
+            }
         }
     </script>
 </body>

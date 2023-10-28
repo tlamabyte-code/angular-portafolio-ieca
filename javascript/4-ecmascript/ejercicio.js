@@ -12,42 +12,43 @@
 
 class ListaNumeros {
     constructor(numeros) {
-        this._numeros = numeros
+        this._numeros = numeros;
     }
 
     get numeros() {
-        return this._numeros
+        return this._numeros;
     }
 
     numerosMayoresAMedia() {
         /*
-            filter. Filtrar items
-            Se utiliza para crear un nuevo array reteniendo solo los elementos que cumplan con una condición específica
-            La condición debe devolver `true` o `false`
-        */
-       
-        // Calculo de la media
-        const media = this.numeros.reduce((a, b) => a + b, 0) / this.numeros.length
+                filter. Filtrar items
+                Se utiliza para crear un nuevo array reteniendo solo los elementos que cumplan con una condición específica
+                La condición debe devolver `true` o `false`
+            */
 
+        // Calculo de la media
+        const media = this.numeros.reduce((a, b) => a + b, 0) / this.numeros.length;
+
+        console.log(this.numeros.filter((x) => x > media));
         // COMPLETA AQUÍ CÓDIGO CON MÉTODO .filter
     }
 
     ordenamientoMayorAMenor() {
         /*
-            sort. Ordenamiento condicionado
-            Investiga más sobre el funcionamiento de los parámetros (a,b) de sort para que lograr 
-            un ordenamiento de mayor a menor
-
-            this.numeros.sort((a, b))
-        */
+                sort. Ordenamiento condicionado
+                Investiga más sobre el funcionamiento de los parámetros (a,b) de sort para que lograr 
+                un ordenamiento de mayor a menor
+            */
+        this.numeros.sort((a, b) => {
+            return b - a;
+        });
 
         // COMPLETA AQUÍ CÓDIGO CON MÉTODO .sort
 
-        console.log(this.numeros)
+        console.log(this.numeros);
     }
-    
 }
 
-const misNumeros = new ListaNumeros([1,5,3,4,2,6,8,10,9,7])
-misNumeros.numerosMayoresAMedia()
-misNumeros.ordenamientoMayorAMenor()
+const misNumeros = new ListaNumeros([1, 5, 3, 4, 2, 6, 8, 10, 9, 7]);
+misNumeros.numerosMayoresAMedia();
+misNumeros.ordenamientoMayorAMenor();
