@@ -62,6 +62,12 @@ export class AppComponent implements OnInit {
         console.log(data.results)
         this.miPokedex = data.results
       })
+
+      /*
+      AQUÍ PUEDES CONTINUAR CON EL EJERCICIO PARA OBTENER LA IMAGEN DEL POKÉMON
+        -> Recuerda revisar el API de https://pokeapi.co/ <-
+      */
+
   }
 
   nuevoPokemon: string = "";
