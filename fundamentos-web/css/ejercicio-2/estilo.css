@@ -1,23 +1,25 @@
 /* estilos.css */
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Kalnia&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Kalnia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #400e23;
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #555;
+    background-color: #432440;
     padding: 10px;
+    font-family: 'Afacad', sans-serif;
 }
 
 ul {
@@ -43,36 +45,41 @@ main {
 }
 
 #bienvenida {
-    background-color: #ffd700;
+    background-color: #e28cbe;
+    font-family: 'Afacad', sans-serif;
 }
 
 .seccion {
-    font-family: monospace;
+    font-family: 'Afacad', sans-serif;
     padding: 10px;
 }
 
 .rojo {
-    background-color: red;
+    font-family: 'Afacad', sans-serif;
+    background-color: rgb(200, 64, 64);
     color: white;
 }
 
 .verde {
-    background-color: green;
+    font-family: 'Afacad', sans-serif;
+    background-color: rgb(60, 119, 60);
     color: white;
 }
 
 .naranja {
-    background-color: orange;
+    font-family: 'Afacad', sans-serif;
+    background-color: rgb(205, 144, 31);
 }
 
 .azul {
-    background-color: blue;
+    font-family: 'Afacad', sans-serif;
+    background-color: rgb(51, 51, 133);
     color: white;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #aeaeae;
+    color: #060404;
     text-align: center;
     padding: 10px;
     position: fixed;

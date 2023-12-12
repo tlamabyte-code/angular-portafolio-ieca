@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS & DOM</title>
+</head>
+
+<body>
+    <div style="display: flex">
+        <input type="text" id="inputEncabezado" placeholder="Ingresa el nuevo encabezado" style="width:70%;margin-bottom:10px" />
+    </div>
+    <div style="display: flex">
+        <button id="btnActualizacion" onClick="modificarEncabezado()" style="margin-right: 10px">Establecer Encabezado</button>
+        <button id="btnUndo" disabled onClick="restaurarEncabezado()">Encabezado Anterior</button>
+    </div>
+    <h1 id="encabezado">...</h1>
+
+    <script>
+        const btnUndo = document.getElementById('btnUndo');
+        const tituloEncabezado = document.getElementById('encabezado');
+        const inputEncabezado = document.getElementById('inputEncabezado');
+        let titulosAnteriores = [];
+
+        function modificarEncabezado() {
+            const nuevoEncabezado = inputEncabezado.value.trim();
+
+            if (nuevoEncabezado !== "") {
+                titulosAnteriores.push(tituloEncabezado.textContent);
+                tituloEncabezado.textContent = nuevoEncabezado;
+
+                // Habilitar el botón "btnUndo" cuando haya al menos 2 títulos
+                if (titulosAnteriores.length >= 2) {
+                    btnUndo.disabled = false;
+                }
+            } else {
+                alert("El valor no puede ser vacío");
+            }
+        }
+
+        function restaurarEncabezado() {
+            if (titulosAnteriores.length >= 2) {
+                // Restaurar el encabezado al título anterior
+                const tituloAnterior = titulosAnteriores.pop();
+                tituloEncabezado.textContent = tituloAnterior;
+
+                // Deshabilitar el botón "btnUndo" si no hay más títulos anteriores
+                if (titulosAnteriores.length < 2) {
+                    btnUndo.disabled = true;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
